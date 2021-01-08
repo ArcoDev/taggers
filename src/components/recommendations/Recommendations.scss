@@ -1,0 +1,44 @@
+//fuentes
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap");
+.recommendations {
+  width: 100%;
+  height: 657px;
+  background: linear-gradient(180deg, #191652 0%, #201d5e 100%);
+  display: flex;
+  .infoRec {
+    width: 55%;
+    padding: 200px 70px;
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.8rem;
+      color: #1fd0ff;
+    }
+    h3 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 2rem;
+      color: #ffffff;
+      line-height: 2.5rem;
+    }
+    p {
+      margin-top: 25px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.8rem;
+      color: #cccccc;
+      width: 73%;
+      span {
+        color: #ffffff;
+      }
+    }
+  }
+  .imgRec {
+    width: 55%;
+  }
+}

@@ -1,0 +1,50 @@
+//fuentes
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+.footer {
+  background: #1d262d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  /*div icon*/
+  .icon a {
+    display: flex;
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin: 5px 0px 0px 10px;
+    }
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #cccccc;
+  }
+  .imgTag {
+    height: 40px;
+    width: 46px;
+    margin: 8px 0px;
+    background-image: url("../../assets/img/icon-tag.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /*div enlaces */
+  .anclas a {
+    margin: 0px 15px;
+    color: #ffffff;
+  }
+  a:hover {
+    color: aqua;
+  }
+  p {
+    margin-top: 60px;
+    float: right;
+  }
+}

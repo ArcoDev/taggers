@@ -1,0 +1,108 @@
+//fuentes
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+@mixin imgInsta {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner {
+  height: 374px;
+  background-image: url("../../assets/img/banner.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #ffffff;
+    width: 50%;
+  }
+  .recYellow {
+    height: 6px;
+    width: 130px;
+    left: 655px;
+    top: 7397px;
+    border-radius: 100px;
+    background-color: #ffd54f;
+  }
+}
+/*Follow instagram*/
+.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  .icon {
+    display: flex;
+    .imgInsta {
+      height: 32px;
+      width: 32px;
+      background-image: url("../../assets/img/instagram.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 10px;
+      transition: all 0.3s ease-in;
+    }
+    .imgInsta:hover {
+      transform: scale(1.05);
+    }
+    h3 {
+      font-style: normal;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-size: 2rem;
+      color: #201d5e;
+      margin: 0px 15px;
+    }
+  }
+  p {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ff174b;
+  }
+}
+/*photos */
+.photos {
+  display: flex;
+  width: 100%;
+  .insta {
+    height: 281px;
+    width: 25%;
+    transition: all 0.3s ease-in;
+  }
+  .insta:hover {
+    transform: scale(1.05);
+  }
+  .insta1 {
+    background-image: url("../../assets/img/insta1.svg");
+    @include imgInsta();
+  }
+  .insta2 {
+    background-image: url("../../assets/img/insta2.svg");
+    @include imgInsta();
+  }
+  .insta3 {
+    background-image: url("../../assets/img/insta3.svg");
+    @include imgInsta();
+  }
+  .insta4 {
+    background-image: url("../../assets/img/insta4.svg");
+    @include imgInsta();
+  }
+  .insta5 {
+    background-image: url("../../assets/img/insta5.svg");
+    @include imgInsta();
+  }
+}

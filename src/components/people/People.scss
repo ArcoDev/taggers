@@ -1,0 +1,99 @@
+//fuentes
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+/*Globales*/
+@mixin sizeIcon {
+  height: 84px;
+  width: 84px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*Div principal*/
+.content {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fbfafc;
+  /*imagen influencer*/
+  .people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .imgPeople {
+      height: 325px;
+      width: 1282px;
+      background-image: url("../../assets/img/people.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: -105px;
+      margin-bottom: 50px;
+    }
+  }
+}
+/*Icons influencers*/
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  .brand,
+  .influencer,
+  .opportunity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 2.7rem;
+      color: #201d5e;
+      margin: 0;
+      padding: 0;
+      border-bottom: 5px solid #ffa800;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #201d5e;
+    }
+  }
+  .imgBrand {
+    @include sizeIcon();
+    background-image: url("../../assets/img/marcas.svg");
+  }
+  .imgInf {
+    @include sizeIcon();
+    background-image: url("../../assets/img/influencer.svg");
+  }
+  .imgOp {
+    @include sizeIcon();
+    background-image: url("../../assets/img/oportunidades.svg");
+  }
+}
+/*text*/
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    width: 50%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #201d5e;
+  }
+  .rect {
+    height: 30px;
+    width: 514px;
+    background-image: url("../../assets/img/rectangulo.svg");
+    margin-bottom: 50px;
+  }
+}
